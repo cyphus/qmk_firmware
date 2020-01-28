@@ -22,8 +22,9 @@ DEBUG_MATRIX    = no
 SKIP_VERSION    = no  # defined in top-level Makefile
 SRC += matrix.c i2c_master.c
 
-# DEBUG_MATRIX is defined in keyboards/gergo/matrix.c, and therefore the rule
-# for how to apply the option has to be specified manually.
+# DEBUG_MATRIX is a gergo specific preprocessor define, referenced only in
+# keyboards/gergo/matrix.c. The rule for how to apply the option has to be
+# specified manually.
 ifeq ($(strip $(DEBUG_MATRIX)), yes)
     OPT_DEFS += -DDEBUG_MATRIX
 endif
