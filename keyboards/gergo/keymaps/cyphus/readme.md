@@ -41,7 +41,7 @@ repository root.
   ```
   # Assuming the layout JSON is saved to ~/Downloads
   cd keyboards/gergo/keymaps
-  jq ~/Downloads/gergo_layout.json > gergo_layout.json
+  jq . ~/Downloads/gergo_layout.json > gergo_layout.json
   python3 ./generate_layout.py gergo_layout.json keymap.c
   ```
 
