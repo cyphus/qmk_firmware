@@ -51,7 +51,7 @@
       "LT(1,KC_NO)",
       "LT(2,KC_NO)",
       "LT(2,KC_NO)",
-      "LT(1,KC_QUOT)",
+      "LT(1,KC_NO)",
       "KC_SPC",
       "KC_RGUI"
     ],
@@ -81,7 +81,7 @@
       "KC_P5",
       "KC_P6",
       "KC_PLUS",
-      "KC_TRNS",
+      "KC_QUOT",
       "KC_TRNS",
       "KC_TRNS",
       "KC_LEFT",
@@ -105,7 +105,7 @@
       "KC_TRNS",
       "KC_TRNS",
       "KC_P0",
-      "KC_PDOT"
+      "KC_TRNS"
     ],
     [
       "KC_TRNS",

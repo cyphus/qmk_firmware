@@ -13,13 +13,12 @@ EXTRAKEY_ENABLE = yes  # Enable audio control and system control keys
 
 # Debug optoins
 VERBOSE 		= no
+# Keyboard will not output any debug info without CONSOLE_ENABLE on
 CONSOLE_ENABLE  = no
 DEBUG_ENABLE    = no
 # Print out a row and col for each key detected in the keyboard matrix
 DEBUG_MATRIX    = no
 
-# Skip baking in the git version and build date
-SKIP_VERSION    = no  # defined in top-level Makefile
 SRC += matrix.c i2c_master.c
 
 # DEBUG_MATRIX is a gergo specific preprocessor define, referenced only in
