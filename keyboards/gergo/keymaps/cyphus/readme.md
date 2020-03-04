@@ -11,9 +11,7 @@ Run the following to install the tools
 ```
 brew tap osx-cross/avr
 brew tap PX4/homebrew-px4
-brew install avr-gcc@8
-brew link --force avr-gcc@8
-brew install jq dfu-programmer dfu-util gcc-arm-none-eabi avrdude
+brew install avr-gcc@8 jq dfu-programmer dfu-util gcc-arm-none-eabi avrdude
 ```
 
 Setup submodules by running `make git-submodule`. Then you can run `make
@@ -40,7 +38,7 @@ repository root.
 * Format the downloaded json with jq and regenerate keymap.c:
   ```
   # Assuming the layout JSON is saved to ~/Downloads
-  cd keyboards/gergo/keymaps
+  cd keyboards/gergo/keymaps/cyphus
   jq . ~/Downloads/gergo_layout.json > gergo_layout.json
   python3 ./generate_layout.py gergo_layout.json keymap.c
   ```
